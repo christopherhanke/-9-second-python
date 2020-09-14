@@ -7,11 +7,13 @@
 number = None
 
 print("Select a number between 1 and 100.")
+
 try:
     number = int(input())
 except ValueError:
     while True:
         print("Please enter a valid Number:")
+
         try:
             number = int(input())
         except ValueError:
